@@ -1,19 +1,22 @@
-import Benefits from './Screens/Benefits';
-import Contact from './Screens/Contact';
-import Home from './Screens/Home';
-import HowWeWork from './Screens/HowWeWork';
-import Services from './Screens/Services';
-import NavBar from './Components/NavBar';
+import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Home />
-      <Services />
-      <Benefits />
-      <HowWeWork />
+      <Banner />
+      <Skills />
+      <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
